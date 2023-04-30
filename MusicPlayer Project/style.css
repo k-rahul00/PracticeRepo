@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: #EEEC91;
+}
+.logo-img{
+    width: 5rem;
+}
+.nav-bar{
+    width: 100%;
+    background-color: #EEEC91;
+}
+.nav-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+h2.logo-name{
+    display: flex;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color:#CC5500;
+    font-weight: 500;
+}
+.nav-contents{
+    list-style: none;
+    display: flex;
+    padding: 2.5rem;
+    gap: 2rem;
+    
+}
+.nav-contents li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:#CC5500;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.nav-container li a:hover{
+    color: white;
+}
+.nav-container li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.5s ease;
+}
+.nav-container li a:hover::after{
+    width: 100%;
+}
+.nav-container form{
+    display: inline-block;
+
+}
+.nav-container input[type=text] {
+    float: right;
+    padding: 0.5rem;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+.search-bar{
+    width: 100%;
+    max-width: max-content;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    color: #CC5500;
+}
+::placeholder{
+    color: #CC5500;
+}
+.search-bar button img{
+    width: 25px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+}
